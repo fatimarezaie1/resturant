@@ -1,9 +1,52 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-	<script src="index.js"></script>
+    <section class="container" >
+        <div class="banner">
+            <h1 >Jimmy’s Diner</h1>
+            <h3>The best burgers and pizzas in town.</h3>
+        </div>
+        <div id="main"> 
+
+        </div>
+       
+       <div id="footer">
+            <h1 id="request">Your Order</h1>
+            <div id="orderList">
+                <ul>
+                    <li id="ordername"></li>
+                    <li class=${"price"} id="price"></li>
+                </ul>
+        
+            </div>
+           
+            <hr class="line2">
+            <div id="collection">
+                <ul>
+                    <li style="font-size: larger; font-weight: 600;" >Total Price: </li>
+                    <li id="allPrice" ></li>
+                </ul>
+            </div>
+            
+            <div class="form" id="popup">
+                <form action="#" id="pop-up">
+                    <h1>Enter card detail</h1>
+                    <input id="input" type="text" placeholder="Enter your name "> <br>
+                    <input id="input" type="text" placeholder="Enter card number"> <br>
+                    <input id="input" type="text" placeholder="Enter CVV"> <br>
+                    <button id="input" class="formBtn" onclick="completeOrder()">Pay</button>
+                </form>
+            </div>
+            <button id="Complete-order" class="Complete-order" onclick="parOrder();">Complete Order</button> 
+       </div>
+       
+    </section>
+
+
+	<script src="data.js"></script>
     </body>
 </html>
 
